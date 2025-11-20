@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>setting</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>271</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SETTING:</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>161</y>
+        <width>136</width>
+        <height>175</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="setting_pbn">
+         <property name="text">
+          <string>RANDOM DATA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="start_btn">
+         <property name="text">
+          <string>START</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="stop_btn">
+         <property name="text">
+          <string>STOP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="export_pbn">
+         <property name="text">
+          <string>export sensor</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="export_pbn_2">
+         <property name="text">
+          <string>export sensor error</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="selectBox_2">
+      <property name="geometry">
+       <rect>
+        <x>222</x>
+        <y>50</y>
+        <width>201</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Select Serial Port</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QComboBox" name="serialPortInfoListBox"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="descriptionLabel">
+         <property name="text">
+          <string>Description:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="manufacturerLabel">
+         <property name="text">
+          <string>Manufacturer:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="serialNumberLabel">
+         <property name="text">
+          <string>Serial number:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="locationLabel">
+         <property name="text">
+          <string>Location:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="vidLabel">
+         <property name="text">
+          <string>Vendor ID:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="pidLabel">
+         <property name="text">
+          <string>Product ID:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>442</x>
+        <y>388</y>
+        <width>185</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>96</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="applyButton">
+         <property name="text">
+          <string>Apply</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="additionalOptionsGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>282</x>
+        <y>298</y>
+        <width>350</width>
+        <height>77</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Additional options</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="localEchoCheckBox">
+         <property name="text">
+          <string>Local echo</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="parametersBox">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>50</y>
+        <width>301</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Select Parameters</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="baudRateLabel">
+         <property name="text">
+          <string>BaudRate:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="baudRateBox"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="dataBitsLabel">
+         <property name="text">
+          <string>Data bits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="dataBitsBox"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="parityLabel">
+         <property name="text">
+          <string>Parity:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="parityBox"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="stopBitsLabel">
+         <property name="text">
+          <string>Stop bits:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="stopBitsBox"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="flowControlLabel">
+         <property name="text">
+          <string>Flow control:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="flowControlBox"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Gauge</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>731</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>270</y>
+        <width>731</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>sensor error</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>644</width>
+        <height>194</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="oil_pressure_rdbtn">
+           <property name="text">
+            <string>Oil Pressure</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="oil_temprature_rdbtn">
+           <property name="text">
+            <string>Oil Temprature</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="fuel_flow_rdbtn">
+           <property name="text">
+            <string>Fuel Flow</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="fuel_rdbtn">
+           <property name="text">
+            <string>Fuel</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="EGT_rdbtn">
+           <property name="text">
+            <string>EGT</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QRadioButton" name="torque_rdbtn">
+           <property name="text">
+            <string>Torque</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="indicated_power_rdbtn">
+           <property name="text">
+            <string>Indicated Power</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="frictional_power_rdbtn">
+           <property name="text">
+            <string>Frictional Power</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="thermal_efficiency_rdbtn">
+           <property name="text">
+            <string>Thermal efficiency</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="airfuel_ratio_rdbtn">
+           <property name="text">
+            <string>Air-fuel Ratio</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QRadioButton" name="motor_speed_rdbtn">
+           <property name="text">
+            <string>Motor Speed</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="output_air_speed_rdbtn">
+           <property name="text">
+            <string>Output Air Speed</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="vibration_rdbtn">
+           <property name="text">
+            <string>Vibration</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="body_temp_rdbtn">
+           <property name="text">
+            <string>Body Temp</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="air_temp_rdbtn">
+           <property name="text">
+            <string>Air Temp</string>
+           </property>
+           <property name="autoExclusive">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Table</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>691</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Message</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>OIL PRESSURE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>OIL TEMPRATURE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>FUEL FLOW</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>FUEL</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EGT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TORQUE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>INDICATED POWER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Frictional Power</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Thermal Efficiency</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Air-fuel Ratio</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MOTOR SPEED</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>OUTPUT AIR SPEED</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>VIBRATION</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BODY TEMP</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>310</y>
+        <width>691</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Message</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>FUEL FLOW</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>FUEL</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EGT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TORQUE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>INDECATED POWER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Frictional Power</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Thermal Efficiency</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Air-fuel Ratio</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MOTOR SPEED</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>OUTPUT AIR SPEED</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>VIBRATION</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>AIR TEMP</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>sensor data:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>270</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>sensor error data:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>260</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>clear tables</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuabout">
+    <property name="title">
+     <string>menu</string>
+    </property>
+    <widget class="QMenu" name="menutheme">
+     <property name="title">
+      <string>theme</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionblack"/>
+     <addaction name="actionwhite"/>
+     <addaction name="actiondark"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menutheme"/>
+   </widget>
+   <addaction name="menuabout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>B Masjed</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <action name="actionabout_1">
+   <property name="text">
+    <string>about_1</string>
+   </property>
+  </action>
+  <action name="actionblack">
+   <property name="text">
+    <string>black</string>
+   </property>
+  </action>
+  <action name="actionwhite">
+   <property name="text">
+    <string>white</string>
+   </property>
+  </action>
+  <action name="actiondark">
+   <property name="text">
+    <string>dark</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

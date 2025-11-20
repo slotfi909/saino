@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dark2/dark2style.qss</file>
+        <file>dark2/rc/branch_closed.png</file>
+        <file>dark2/rc/branch_closed-on.png</file>
+        <file>dark2/rc/branch_open.png</file>
+        <file>dark2/rc/branch_open-on.png</file>
+        <file>dark2/rc/checkbox_checked.png</file>
+        <file>dark2/rc/checkbox_checked_disabled.png</file>
+        <file>dark2/rc/checkbox_checked_focus.png</file>
+        <file>dark2/rc/checkbox_indeterminate.png</file>
+        <file>dark2/rc/checkbox_indeterminate_disabled.png</file>
+        <file>dark2/rc/checkbox_indeterminate_focus.png</file>
+        <file>dark2/rc/checkbox_unchecked.png</file>
+        <file>dark2/rc/checkbox_unchecked_disabled.png</file>
+        <file>dark2/rc/checkbox_unchecked_focus.png</file>
+        <file>dark2/rc/close.png</file>
+        <file>dark2/rc/close-hover.png</file>
+        <file>dark2/rc/close-pressed.png</file>
+        <file>dark2/rc/down_arrow.png</file>
+        <file>dark2/rc/down_arrow_disabled.png</file>
+        <file>dark2/rc/Hmovetoolbar.png</file>
+        <file>dark2/rc/left_arrow.png</file>
+        <file>dark2/rc/left_arrow_disabled.png</file>
+        <file>dark2/rc/radio_checked_focus.png</file>
+        <file>dark2/rc/radio_checked_focus@2x.png</file>
+        <file>dark2/rc/radio_unchecked.png</file>
+        <file>dark2/rc/radiobutton_enabled.png</file>
+        <file>dark2/rc/radiobutton_enabled2.png</file>
+        <file>dark2/rc/right_arrow.png</file>
+        <file>dark2/rc/right_arrow_disabled.png</file>
+        <file>dark2/rc/transparent.png</file>
+        <file>dark2/rc/undock.png</file>
+        <file>dark2/rc/undock-pressed.png</file>
+        <file>dark2/rc/up_arrow.png</file>
+        <file>dark2/rc/up_arrow_disabled.png</file>
+        <file>dark2/rc/Vmovetoolbar.png</file>
+    </qresource>
+</RCC>

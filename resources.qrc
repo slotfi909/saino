@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/icon.ico</file>
+        <file>resource/reclight.qrc</file>
+        <file>resource/recdark.qrc</file>
+        <file>resource/icon.png</file>
+        <file>resource/recdark2.qrc</file>
+    </qresource>
+</RCC>
